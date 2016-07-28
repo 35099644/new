@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top_bar" >
+
+        <TextView
+            android:id="@+id/tv_in"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="静默安装已关闭"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tb_install"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/checkbox_lock"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="线程扫描间隔:"
+            android:textSize="14sp" />
+
+        <NumberPicker
+            android:id="@+id/np_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="分"
+            android:textSize="14sp" />
+
+        <NumberPicker
+            android:id="@+id/np_seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="秒"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_open1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top_bar" >
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="打开app功能(关闭)"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tb_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/checkbox_lock"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_uninstall1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top_bar" >
+
+        <TextView
+            android:id="@+id/tv_un"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="静默卸载已关闭"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:id="@+id/tb_uninstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/checkbox_lock"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_uninstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="多久后卸载:"
+            android:textSize="14sp" />
+
+       <NumberPicker
+            android:id="@+id/np_minute2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="分"
+            android:textSize="14sp" />
+
+        <NumberPicker
+            android:id="@+id/np_seconds2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="秒"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

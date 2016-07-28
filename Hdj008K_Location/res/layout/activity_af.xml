@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_file"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="监听应用文件操作" />
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="监听系统值设置" />
+
+            <Button
+                android:id="@+id/btn_hide"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="隐藏应用包名" />
+
+            <Button
+                android:id="@+id/btn_install"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="自动静默安装卸载" />
+
+            <Button
+                android:id="@+id/btn_liucun"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text="留存功能" />
+
+            <Button
+                android:id="@+id/btn_deldata"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text="删除指定文件夹" />
+
+            <Button
+                android:id="@+id/btn_xpress"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text="一键功能" />
+
+            <Button
+                android:id="@+id/btn_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="获取wifi列表已关闭" />
+
+            <Button
+                android:id="@+id/btn_density"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text="修改密度已关闭" />
+
+            <Button
+                android:id="@+id/btn_global"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text="全局修改已关闭" />
+            
+            <Button
+                android:id="@+id/btn_browser"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text="清除浏览器数据" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <include layout="@layout/my_head" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+          
+            <TextView
+                android:id="@+id/tv_imei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="imei:" />
+
+            <EditText
+                android:id="@+id/et_imei"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="android_id:" />
+
+            <EditText
+                android:id="@+id/et_android"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码:" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机卡序列号:" />
+
+            <EditText
+                android:id="@+id/et_phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+
+            <TextView
+                android:id="@+id/tv_imsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMSI:" />
+
+            <EditText
+                android:id="@+id/et_imsi"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_yys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运营商:" />
+            
+             <EditText
+                android:id="@+id/et_yys1"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_simstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机卡状态:" />
+
+            <EditText
+                android:id="@+id/et_simstate1"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_net"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络运营商名:" />
+
+            <EditText
+                android:id="@+id/et_net"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_netnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络类型:" />
+
+            <EditText
+                android:id="@+id/et_netnum"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mac地址:" />
+
+            <EditText
+                android:id="@+id/et_mac"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无线路由器名:" />
+
+            <EditText
+                android:id="@+id/et_wx"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_wxdz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无线路由器地址:" />
+
+            <EditText
+                android:id="@+id/et_wxdz"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            
+            <TextView
+                android:id="@+id/tv_lac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基站Lac:" />
+
+            <EditText
+                android:id="@+id/et_lac"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_cid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基站cid:" />
+
+            <EditText
+                android:id="@+id/et_cid"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_bb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统版本:" />
+
+            <EditText
+                android:id="@+id/et_bb"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_bbz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统版本值:" />
+
+            <EditText
+                android:id="@+id/et_bbz"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_fbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="屏幕分辨率:" />
+
+            <EditText
+                android:id="@+id/et_fbl"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_pp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品牌:" />
+
+            <EditText
+                android:id="@+id/et_pp"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_xh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机型:" />
+
+            <EditText
+                android:id="@+id/et_xh"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_cpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品:" />
+
+            <EditText
+                android:id="@+id/et_cpm"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_zzs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="制造商:" />
+
+            <EditText
+                android:id="@+id/et_zzs"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_sbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备:" />
+
+            <EditText
+                android:id="@+id/et_sbm"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_yj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="硬件:" />
+
+            <EditText
+                android:id="@+id/et_yj"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_zw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指纹:" />
+            
+
+            <EditText
+                android:id="@+id/et_zw"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_ua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserAgent:" />
+
+            <EditText
+                android:id="@+id/et_ua1"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_cpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cpu型号:" />
+
+            <EditText
+                android:id="@+id/et_cpu"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_gjbb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="固件版本:" />
+
+            <EditText
+                android:id="@+id/et_gjbb"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:" />
+
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISPLAY:" />
+
+            <EditText
+                android:id="@+id/et_display"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            <TextView
+                android:id="@+id/tv_host"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOST" />
+
+            <EditText
+                android:id="@+id/et_host"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_ck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="串口序列号:" />
+
+            <EditText
+                android:id="@+id/et_ck"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝牙地址:" />
+
+            <EditText
+                android:id="@+id/et_ly"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+
+            <TextView
+                android:id="@+id/tv_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内网IP:" />
+
+            <EditText
+                android:id="@+id/et_ip"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="纬度:" />
+
+            <EditText
+                android:id="@+id/et_lat"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+            
+            <TextView
+                android:id="@+id/tv_lng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经度:" />
+
+            <EditText
+                android:id="@+id/et_lng"
+                android:layout_width="match_parent"
+                android:layout_height="40dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

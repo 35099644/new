@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#33000000" >
+
+        <Button
+            android:id="@+id/btn_folder1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:text="开启" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:text="选择文件夹"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_folder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="关闭" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_delfolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#33000000"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="应用打开的时间:" />
+
+        <EditText
+            android:id="@+id/et_delfolder"
+            android:layout_width="200dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:phoneNumber="true"
+            android:layout_height="wrap_content" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+            android:text="(秒)" 
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_delfolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+</LinearLayout>

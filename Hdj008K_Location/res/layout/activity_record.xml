@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/btn_delete_record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="清除记录中的文件"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_clear_record1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="清除记录"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cb_open_record"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="开启" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/tv_app_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="应用名:" />
+
+        <TextView
+            android:id="@+id/tv_packagename_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_app_record"
+            android:layout_marginTop="5dp"
+            android:text="包名" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="12sp" />
+
+</LinearLayout>
